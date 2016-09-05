@@ -4,4 +4,4 @@ bower_components/
 tmp
 .DS_Store
 .idea
-jspm_packages
+jspm_packages/
