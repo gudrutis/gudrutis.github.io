@@ -36,18 +36,6 @@
             <p>{{ul.selected.content}}</p>
 
             <div ng-view></div>
-            <script type="text/ng-template" id="Topic_1.htm">
-                <h2> Topic 1 </h2>
-            </script>
-            <script type="text/ng-template" id="Topic_2.htm">
-                <h2> Topic 2 </h2>
-            </script>
-            <script type="text/ng-template" id="Topic_3.htm">
-                <h2> Topic 3 </h2>
-            </script>
-            <script type="text/ng-template" id="Topic_4.htm">
-                <h2> Topic 4 </h2>
-            </script>
         </md-content>
     </div>
     <script src="./node_modules/angular/angular.js"></script>
@@ -84,10 +72,10 @@
                     templateUrl: "src/pages/tp2.html"
                 })
                 .when("/tp3", {
-                    templateUrl: "Topic_3.htm"
+                    templateUrl: "src/pages/tp3.html"
                 })
                 .when("/tp4", {
-                    templateUrl: "Topic_4.htm"
+                    templateUrl: "src/pages/tp4.html"
                 });
         });
     </script>
