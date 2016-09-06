@@ -18,25 +18,25 @@
         name: 'Topic 1',
         avatar: 'svg-1',
         content: 'bla',
-        view: 'link/to/view1'
+        view: '/'
       },
       {
         name: 'Topic 2',
         avatar: 'svg-2',
         content: 'blabla',
-        view: 'link/to/view2'
+        view: '/tp2'
       },
       {
         name: 'Topic 3',
         avatar: 'svg-3',
         content: "Blabla bla",
-        view: 'link/to/view3'
+        view: '/tp3'
       },
       {
         name: 'Topic 4',
         avatar: 'menu',
         content: 'blablabla',
-        view: 'link/to/view4'
+        view: '/tp4'
       }
     ];
 
