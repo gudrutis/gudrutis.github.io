@@ -16,13 +16,13 @@
     var users = [
       {
         name: 'Topic 1',
-        avatar: 'svg-1',
+        avatar: 'personal',
         content: 'bla',
         view: '/'
       },
       {
         name: 'Topic 2',
-        avatar: 'svg-2',
+        avatar: 'work',
         content: 'blabla',
         view: '/tp2'
       },

@@ -10,6 +10,9 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
     <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css" />
     <link rel="stylesheet" href="assets/app.css" />
+    <!-- google icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body ng-app="starterApp" layout="column" ng-controller="UserController as ul">
@@ -24,7 +27,7 @@
             <md-list>
                 <md-list-item ng-repeat="u in ul.users">
                     <md-button layout-fill style="text-align:left" ng-click="ul.selectUser(u)" href="#{{u.view}}" ng-class="{'selected' : u === ul.selected }">
-                        <md-icon md-svg-icon="{{u.avatar}}" class="avatar"></md-icon>
+                        <md-icon style="color:red;font:bold;"  md-svg-icon="{{u.avatar}}" class="avatar "></md-icon>
                         {{u.name}}
                     </md-button>
                 </md-list-item>
@@ -48,7 +51,7 @@
     <script type="text/javascript">
     angular
         .module('starterApp', ['ngMaterial', 'ngRoute', 'users'])
-        .config(function($mdThemingProvider, $mdIconProvider, $routeProvider) {
+        .config(function($mdThemingProvider, $mdIconProvider, $routeProvider, $mdThemingProvider) {
 
             $mdThemingProvider.theme('default')
                 .primaryPalette('brown')
@@ -61,14 +64,24 @@
                 .icon("google_plus", "./assets/svg/google_plus.svg", 512)
                 .icon("hangouts", "./assets/svg/hangouts.svg", 512)
                 .icon("twitter", "./assets/svg/twitter.svg", 512)
-                .icon("phone", "./assets/svg/phone.svg", 512);
+                .icon("phone", "./assets/svg/phone.svg", 512)
+
+                .icon("personal", "./assets/svg/ic_person_pin_black_48px.svg", 128)
+                .icon("work", "./assets/svg/ic_account_balance_black_48px.svg", 128)
+                .icon("portfolio", "./assets/svg/ic_work_black_48px.svg", 128);
+
+            $mdThemingProvider.theme('dark-orange').backgroundPalette('orange').dark();
+            $mdThemingProvider.theme('dark-grey').backgroundPalette('grey').dark();
+            $mdThemingProvider.theme('dark-purple').backgroundPalette('deep-purple').dark();
+            $mdThemingProvider.theme('dark-blue').backgroundPalette('blue').dark();
 
             $routeProvider
                 .when("/", {
-                    templateUrl: "src/pages/tp1.html"
+                    templateUrl: "src/pages/tp1.html",
+                    // controller: 'ViewStudentsController'
                 })
                 .when("/tp2", {
-                    templateUrl: "src/pages/tp2.html",
+                    templateUrl: "src/pages/tp2.html"
                 })
                 .when("/tp3", {
                     templateUrl: "src/pages/tp3.html"
