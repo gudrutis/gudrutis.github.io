@@ -23,7 +23,7 @@
         <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-click="ul.toggleList()" class="md-whiteframe-4dp">
             <md-list>
                 <md-list-item ng-repeat="u in ul.users">
-                    <md-button ng-click="ul.selectUser(u)" href="#{{u.view}}" ng-class="{'selected' : u === ul.selected }">
+                    <md-button layout-fill style="text-align:left" ng-click="ul.selectUser(u)" href="#{{u.view}}" ng-class="{'selected' : u === ul.selected }">
                         <md-icon md-svg-icon="{{u.avatar}}" class="avatar"></md-icon>
                         {{u.name}}
                     </md-button>
@@ -34,6 +34,7 @@
             <md-icon md-svg-icon="{{ul.selected.avatar}}" class="avatar"></md-icon>
             <h2>{{ul.selected.name}}</h2>
             <p>{{ul.selected.content}}</p>
+
             <div ng-view></div>
             <script type="text/ng-template" id="Topic_1.htm">
                 <h2> Topic 1 </h2>
@@ -59,7 +60,7 @@
     <script src="./src/users/UserService.js"></script>
     <script type="text/javascript">
     angular
-        .module('starterApp', ['ngMaterial', 'ngRoute','users'])
+        .module('starterApp', ['ngMaterial', 'ngRoute', 'users'])
         .config(function($mdThemingProvider, $mdIconProvider, $routeProvider) {
 
             $mdThemingProvider.theme('default')
