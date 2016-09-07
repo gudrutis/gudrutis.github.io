@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/app.css" />
     <!-- google icons  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 
 <body ng-app="starterApp" layout="column" ng-controller="UserController as ul">
@@ -23,21 +22,19 @@
         <h3>CV of Žygimantas Matonis</h3>
     </md-toolbar>
     <div flex layout="row">
-        <md-sidenav  md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-click="ul.toggleList()" class="md-whiteframe-4dp"  >
+        <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-click="ul.toggleList()" class="md-whiteframe-4dp">
             <md-list>
-                <md-list-item ng-repeat="u in ul.users" >
+                <md-list-item ng-repeat="u in ul.users">
                     <md-button layout-fill style="text-align:left" ng-click="ul.selectUser(u)" href="#{{u.view}}" ng-class="{'selected' : u === ul.selected }">
-                        <md-icon style="color:rgb(63,81,181);font:bold;"  md-svg-icon="{{u.avatar}}" class="avatar "></md-icon>
+                        <md-icon style="color:rgb(63,81,181);font:bold;" md-svg-icon="{{u.avatar}}" class="avatar "></md-icon>
                         <b>{{u.name}}</b>
                     </md-button>
                 </md-list-item>
             </md-list>
         </md-sidenav>
-        <md-content flex id="content" style="overflow: scroll;" >
-
-        <!-- content from ng view -->
+        <md-content flex id="content" style="overflow: scroll;">
+            <!-- content from ng view -->
             <div ng-view></div>
-
         </md-content>
     </div>
     <script src="./node_modules/angular/angular.js"></script>
@@ -48,14 +45,18 @@
     <script src="./src/users/Users.js"></script>
     <script src="./src/users/UserController.js"></script>
     <script src="./src/users/UserService.js"></script>
+    <!-- Include YT library and this directive -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./node_modules/angular-youtube-embed/dist/angular-youtube-embed.min.js"></script>
+    <!-- starterApp logic -->
     <script type="text/javascript">
     angular
-        .module('starterApp', ['ngMaterial', 'ngRoute', 'users'])
+        .module('starterApp', ['ngMaterial', 'ngRoute', 'users', 'youtube-embed'])
         .config(function($mdThemingProvider, $mdIconProvider, $routeProvider, $mdThemingProvider) {
 
             $mdThemingProvider.theme('default')
                 .primaryPalette('indigo');
-                // .accentPalette('red');
+            // .accentPalette('red');
 
             $mdIconProvider
                 .defaultIconSet("./assets/svg/avatars.svg", 128)
@@ -66,7 +67,7 @@
                 .icon("twitter", "./assets/svg/twitter.svg", 512)
                 .icon("phone", "./assets/svg/phone.svg", 512)
 
-                .icon("personal", "./assets/svg/ic_person_pin_black_48px.svg", 128)
+            .icon("personal", "./assets/svg/ic_person_pin_black_48px.svg", 128)
                 .icon("work", "./assets/svg/ic_account_balance_black_48px.svg", 128)
                 .icon("portfolio", "./assets/svg/ic_work_black_48px.svg", 128);
 
@@ -78,18 +79,26 @@
             $routeProvider
                 .when("/", {
                     templateUrl: "src/pages/tp1.html",
-                    // controller: 'ViewStudentsController'
+                    controller: 'portfolio'
                 })
                 .when("/tp2", {
-                    templateUrl: "src/pages/tp2.html"
+                    templateUrl: "src/pages/tp2.html",
+                    controller: 'portfolio'
                 })
                 .when("/tp3", {
-                    templateUrl: "src/pages/tp3.html"
+                    templateUrl: "src/pages/tp3.html",
+                    controller: 'portfolio'
                 })
                 .when("/tp4", {
-                    templateUrl: "src/pages/tp4.html"
+                    templateUrl: "src/pages/tp4.html",
+                    controller: 'portfolio'
                 });
-        });
+        })
+
+    //TODO: needs to be exported
+    .controller('portfolio', function($scope) {
+        $scope.theBestVideo = 'sMKoNBRZM1M';
+    });
     </script>
 </body>
 
