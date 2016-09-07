@@ -20,15 +20,15 @@
         <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()">
             <md-icon md-svg-icon="menu"></md-icon>
         </md-button>
-        <h3>Angular Material - Starter App</h3>
+        <h3>CV of Žygimantas Matonis</h3>
     </md-toolbar>
     <div flex layout="row">
-        <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-click="ul.toggleList()" class="md-whiteframe-4dp">
+        <md-sidenav  md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-click="ul.toggleList()" class="md-whiteframe-4dp"  >
             <md-list>
-                <md-list-item ng-repeat="u in ul.users">
+                <md-list-item ng-repeat="u in ul.users" >
                     <md-button layout-fill style="text-align:left" ng-click="ul.selectUser(u)" href="#{{u.view}}" ng-class="{'selected' : u === ul.selected }">
-                        <md-icon style="color:red;font:bold;"  md-svg-icon="{{u.avatar}}" class="avatar "></md-icon>
-                        {{u.name}}
+                        <md-icon style="color:rgb(63,81,181);font:bold;"  md-svg-icon="{{u.avatar}}" class="avatar "></md-icon>
+                        <b>{{u.name}}</b>
                     </md-button>
                 </md-list-item>
             </md-list>
@@ -54,8 +54,8 @@
         .config(function($mdThemingProvider, $mdIconProvider, $routeProvider, $mdThemingProvider) {
 
             $mdThemingProvider.theme('default')
-                .primaryPalette('brown')
-                .accentPalette('red');
+                .primaryPalette('indigo');
+                // .accentPalette('red');
 
             $mdIconProvider
                 .defaultIconSet("./assets/svg/avatars.svg", 128)

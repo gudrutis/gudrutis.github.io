@@ -37,11 +37,15 @@ md-list-item > button {
     padding: 0px 0px 8px 0px;
   }
 
+  md-sidenav {
+    background-color: #E1E4E6;
+  }
 
 /* Primary content area */
 
 #content {
   overflow: hidden;
+  /*background-color: #EBF5FA;*/
 }
 
 #content  {
