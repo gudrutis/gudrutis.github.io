@@ -48,6 +48,7 @@
     <!-- Include YT library and this directive -->
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./node_modules/angular-youtube-embed/dist/angular-youtube-embed.min.js"></script>
+
     <!-- starterApp logic -->
     <script type="text/javascript">
     angular
@@ -59,7 +60,7 @@
             // .accentPalette('red');
 
             $mdIconProvider
-                .defaultIconSet("./assets/svg/avatars.svg", 128)
+                .defaultIconSet("./assets/svg/avatars.svg", 128)`
                 .icon("menu", "./assets/svg/menu.svg", 24)
                 .icon("share", "./assets/svg/share.svg", 24)
                 .icon("google_plus", "./assets/svg/google_plus.svg", 512)
@@ -97,7 +98,10 @@
 
     //TODO: needs to be exported
     .controller('portfolio', function($scope) {
-        $scope.theBestVideo = 'sMKoNBRZM1M';
+        $scope.videos = {
+            test:'sMKoNBRZM1M'};
+
+
     });
     </script>
 </body>
