@@ -1,25 +1,26 @@
-<!-- <md-content layout-padding layout-wrap> -->
-    <!-- <md-card md-theme='dark-orange' > -->
-    <md-card >
-        <!-- <img ng-src="" class="md-card-image" alt="Learn HTML5"> -->
-
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">*Project Name*</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="start center">
-            <!-- <md-button>Download</md-button> -->
-            <md-button>*GitHub_link*</md-button>
-            <md-card-icon-actions><!--
-                <md-button class="md-icon-button" aria-label="icon">
-                    <md-icon class="material-icons">add</md-icon>
-                </md-button>
-            </md-card-icon-actions> -->
-        </md-card-actions>
-        <md-card-content>
-            </p>The new standard incorporates features like video playback and drag-and-drop that have been previously dependent on third-party browser plug-ins such as Adobe Flash, Microsoft Silverlight, and Google Gears.</p>
-            <youtube-video video-id="vid.theBestVideo"></youtube-video>
-        </md-card-content>
-    </md-card>
-<!-- </md-content> -->
+<md-card>
+    <!-- <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> -->
+    <youtube-video video-id="videos.test" player-width="'100%'" player-height="'300'">></youtube-video>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">*Title of project*</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="start center">
+        <md-card-icon-actions>
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon md-svg-icon="menu"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon md-svg-icon="phone"></md-icon>
+            </md-button>
+        </md-card-icon-actions>
+        <!-- <md-button>Action 1</md-button> -->
+        <!-- <md-button>Action 2</md-button> -->
+    </md-card-actions>
+    <md-card-content>
+        <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+    </md-card-content>
+</md-card>
