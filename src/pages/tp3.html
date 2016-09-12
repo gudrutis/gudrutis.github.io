@@ -1,19 +1,26 @@
-<div layout="column" md-colors="{color:'primary'}" >
-
-            <md-toolbar class="md-primary md-hue-1" >HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</md-toolbar>
-            <md-toolbar class="md-primary md-hue-2" >HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</md-toolbar>
-            <md-toolbar class="md-primary md-hue-1">HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</md-toolbar>
-            <md-toolbar class="md-primary md-hue-2">HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</md-toolbar>
-            <md-toolbar class="md-primary md-hue-3">HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</md-toolbar>
-            <p md-colors="{color:'primary'}" >HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).</p>
-            <youtube-video video-id="videos.test"></youtube-video>
-</div>
+<md-card>
+    <!-- <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> -->
+    <youtube-video video-id="videos.test" player-width="'100%'" player-height="'300'">></youtube-video>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">*Title of project*</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="start center">
+        <md-card-icon-actions>
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon md-svg-icon="menu"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon md-svg-icon="phone"></md-icon>
+            </md-button>
+        </md-card-icon-actions>
+        <!-- <md-button>Action 1</md-button> -->
+        <!-- <md-button>Action 2</md-button> -->
+    </md-card-actions>
+    <md-card-content>
+        <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+    </md-card-content>
+</md-card>

@@ -15,25 +15,25 @@
   function UserService($q){
     var users = [
       {
-        name: 'Topic 1',
+        name: '*personal info*',
         avatar: 'personal',
         content: 'bla',
         view: '/'
       },
       {
-        name: 'Topic 2',
+        name: '*working experience*',
         avatar: 'work',
         content: 'blabla',
         view: '/tp2'
       },
       {
-        name: 'Topic 3',
-        avatar: 'svg-3',
+        name: '*portfolio*',
+        avatar: 'portfolio',
         content: "Blabla bla",
         view: '/tp3'
       },
       {
-        name: 'Topic 4',
+        name: '*Reasons to consider*',
         avatar: 'menu',
         content: 'blablabla',
         view: '/tp4'
