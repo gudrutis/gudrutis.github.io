@@ -1,12 +1,16 @@
-<div ng-cloak>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom >
-      <md-tab ng-repeat="reason in reasons"  label="{{reason.label}}"">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">{{reason.title}}</h1>
-          <p>{{reason.content}}</p>
-        </md-content>
-      </md-tab>
-    </md-tabs>
-  </md-content>
-</div>
+<md-card>
+    <md-card-content>
+        <div ng-cloak>
+            <md-content>
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab ng-repeat="reason in reasons" label="{{reason.label}}" ">
+                        <md-content class="md-padding ">
+                            <h1 class="md-display-2 ">{{reason.title}}</h1>
+                            <p>{{reason.content}}</p>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+        </div>
+    </md-card-content>
+</md-card>
