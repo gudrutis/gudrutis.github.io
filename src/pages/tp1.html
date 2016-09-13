@@ -1,28 +1,38 @@
-<md-content ng-repeat="work in portfolio.works">
-    <md-card>
-        <!-- <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> -->
-        <youtube-video video-id="work.video" player-width="'100%'" player-height="'300'">></youtube-video>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">{{work.title}}</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="start center">
-            <md-card-icon-actions>
-                <md-button class="md-icon-button" aria-label="Favorite">
-                    <md-icon md-svg-icon="menu"></md-icon>
-                </md-button>
-                <md-button class="md-icon-button" aria-label="Share">
-                    <md-icon md-svg-icon="phone"></md-icon>
-                </md-button>
-            </md-card-icon-actions>
-            <!-- <md-button>Action 1</md-button> -->
-            <!-- <md-button>Action 2</md-button> -->
-        </md-card-actions>
-        <md-card-content>
-            <p>
-                {{work.content}}
-            </p>
-        </md-card-content>
-    </md-card>
-</md-content>
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
