@@ -1,5 +1,20 @@
-<div>
-    <md-button class="md-primary">Click me</md-button>
-    <md-button class="md-accent">or maybe me</md-button>
-    <md-button class="md-warn">Careful</md-button>
-</div>
+<md-card ng-repeat="job in jobs">
+    <md-card-content>
+        <div layout="row">
+            <div flex class='md-padding'>
+                <table>
+                    <col style="width:30%">
+                    <col style="width:70%">
+                    <caption>{{job.title}}</caption>
+                    <tr ng-repeat="(key, value) in job.info">
+                        <th>{{key}}:</th>
+                        <td>{{value}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class='app_img_cont md-padding'>
+                <img ng-src="{{job.img}}" alt="Washed Out">
+            </div>
+        </div>
+    </md-card-content>
+</md-card>
