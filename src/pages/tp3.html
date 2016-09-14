@@ -1,25 +1,26 @@
 <md-content>
     <md-card ng-repeat="work in works">
-        <!-- <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> -->
-        <youtube-video video-id="work.video" player-width="'100%'" player-height="'300'"></youtube-video>
+        <div class="youtube_cont" ng-if="work.video">
+            <youtube-video video-id="work.video" player-width="'100%'" player-height="'300'"></youtube-video>
+        </div>
         <md-card-title>
             <md-card-title-text>
                 <span class="md-headline">{{work.title}}</span>
             </md-card-title-text>
-        <md-card-actions style='padding-right: 10px' ng-if="work.github_link" layout="row" layout-align="start center">
-            <label>
-                <b>View on github</b>
-            </label>
-            <md-card-icon-actions>
-                <md-button class="md-icon-button md-raised" aria-label="Share" href={{work.github_link}} target="_blank">
-                    <md-icon md-svg-icon="github" style="color:black"></md-icon>
-                </md-button>
-            </md-card-icon-actions>
-        </md-card-actions>
+            <md-card-actions style='padding-right: 10px' ng-if="work.github_link" layout="row" layout-align="start center">
+                <label>
+                    <b>View on github</b>
+                </label>
+                <md-card-icon-actions>
+                    <md-button class="md-icon-button md-raised" aria-label="Share" href={{work.github_link}} target="_blank">
+                        <md-icon md-svg-icon="github" style="color:black"></md-icon>
+                    </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
         </md-card-title>
         <md-card-content>
             <p>
-                {{work.content}}
+                aaas asd asd {{work.content}}
             </p>
         </md-card-content>
     </md-card>

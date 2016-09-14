@@ -173,6 +173,15 @@ table > caption{
   display:block;
 }
 
-.md-card-content > p {
+md-card-content > p {
+  font-size: 130%;
+}
 
+md-card{
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.youtube_cont{
+  margin: 25px;
 }
