@@ -165,7 +165,10 @@ table > caption{
 }
 
 .app_img_cont > img{
+  margin-top: 37px;
   width: 200px;
   border: 1px solid black;
   vertical-align: middle;
+  text-align:center;
+  display:block;
 }
