@@ -141,9 +141,6 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-caption{
-
-}
 
 td, th {
     border: 1px solid #dddddd;
@@ -151,10 +148,20 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
     background-color: #dddddd;
+}*/
+
+table > caption{
+  background-color: red;
 }
 
 .app_img_cont{
+  /*vertical-align: middle;*/
+  /*height: 100%;*/
+}
 
+.app_img_cont > img{
+  width: 200px;
+  border: 1px solid black;
 }
