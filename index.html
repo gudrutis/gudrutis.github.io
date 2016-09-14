@@ -139,37 +139,31 @@
 
     //TODO: needs to be exported
     .controller('personal', function($scope) {
-        $scope.person = {
-            name: 'Žygimantas',
-            surname: 'Matonis',
-            phone: 'blabla sssa',
-            linked_in: 'https://lt.linkedin.com/in/žygimantas-matonis-244b29109',
-            github: 'https://github.com/gudrutis/',
-            email: 'mr.matonis(eta)gmai.com',
-            phone: '+37062420749',
-            education: [{
-                name:'VU',
-            }, {
-                name:'Merkine',
-            }],
-        }
+        $scope.person_info = {
+            Name: 'Žygimantas',
+            Surname: 'Matonis',
+            'Birth date': 'October 20, 1993',
+            Sex: 'Male',
+            Address: 'Vilnius, Lithuania',
+            Phone: '+37062420749',
+            'E-mail': 'mr.matonis(eta)gmail.com',
+            'Level of education': 'Higher education in acquisition',
+            'Current job status': 'Studying',
 
-        // $scope.works = [{
-        //     video: 'NI5HZ52f9LM',
-        //     title: 'POV-Ray animation',
-        //     content: 'blabla sssa',
-        //     github_link: 'https://github.com/gudrutis/MazeAnimationOnPovRay/tree/master/scene',
-        // }, {
-        //     video: 'm9ubrVDgltU',
-        //     title: 'nCursian - a simple terminal game',
-        //     content: 'blabla bla blabla bla blablsss la blabla bla blabla bla',
-        //     // github_link:'https://github.com/gudrutis/MazeAnimationOnPovRay',
-        // }, {
-        //     video: 'NI5HZ52f9LM',
-        //     title: 'POV-Ray animation',
-        //     content: 'bfffff f fff fff f f ff f ',
-        //     github_link: '',
-        // }];
+        };
+        $scope.contacts = {
+            Github: 'https://github.com/gudrutis/',
+            LinkedIn: 'https://lt.linkedin.com/in/žygimantas-matonis-244b29109',
+        };
+
+        $scope.higher_education = {
+            University:'Vilnius University',
+            Faculty:'Faculty of Mathematics and Informatics',
+            Degree:'Bachelor',
+            Major:'Information Technologies',
+            'Period of studies':' September 1, 2013 - January 31, 2017',
+            Description:'This study program follows best practices of western universities and is practice-oriented',
+        };
     })
 
     //TODO: needs to be exported

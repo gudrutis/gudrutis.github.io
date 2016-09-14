@@ -1,61 +1,40 @@
 <md-card>
     <md-card-content>
         <div layout="row">
-          <div flex class='md-padding'>
-            <table>
-                <col style="width:50%">
-                <col style="width:50%">
-                <caption>Personal info</caption>
-                <tr>
-                    <td>Name</td>
-                    <td>Maria Anders</td>
-                </tr>
-                <tr>
-                    <td>Surname</td>
-                    <td>Francisco Chang</td>
-                </tr>
-                <tr>
-                    <td>Birthday</td>
-                    <td>Roland Mendel</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                </tr>
-            </table>
-          </div>
-
-          <div  class ='app_img_cont md-padding' >
-            <img ng-src="./assets/jpeg/me_photo.png"  alt="Washed Out">
-          </div>
+            <div flex class='md-padding'>
+                <table>
+                    <col style="width:50%">
+                    <col style="width:50%">
+                    <caption>Personal info</caption>
+                    <tr ng-repeat="(key, value) in person_info">
+                        <th>{{key}}:</td>
+                        <td>{{value}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class='app_img_cont md-padding'>
+                <img ng-src="./assets/jpeg/me_photo.png" alt="Washed Out">
+            </div>
+        </div>
+    </md-card-content>
+</md-card>
+<md-card>
+    <md-card-content>
+        <div layout="row">
+            <div flex class='md-padding'>
+                <table>
+                    <col style="width:50%">
+                    <col style="width:50%">
+                    <caption>Higher education</caption>
+                    <tr ng-repeat="(key, value) in higher_education">
+                        <th>{{key}}:</td>
+                        <td>{{value}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class='app_img_cont md-padding'>
+                <img ng-src="./assets/jpeg/VU_logo.jpg" alt="Washed Out">
+            </div>
         </div>
     </md-card-content>
 </md-card>
