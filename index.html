@@ -82,15 +82,15 @@
                     templateUrl: "src/pages/tp1.html",
                     controller: 'personal'
                 })
-                .when("/tp2", {
+                .when("/experience", {
                     templateUrl: "src/pages/tp2.html",
                     controller: 'experience'
                 })
-                .when("/tp3", {
+                .when("/portfolio", {
                     templateUrl: "src/pages/tp3.html",
                     controller: 'portfolio'
                 })
-                .when("/tp4", {
+                .when("/why", {
                     templateUrl: "src/pages/tp4.html",
                     controller: 'motivation'
                 });
@@ -103,7 +103,10 @@
         $scope.works = [{
             video: 'NI5HZ52f9LM',
             title: 'POV-Ray animation',
-            content: 'blabla sssa',
+            content: ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
             github_link: 'https://github.com/gudrutis/MazeAnimationOnPovRay/tree/master/scene',
         }, {
             video: 'm9ubrVDgltU',
@@ -113,11 +116,17 @@
         }, {
             video: 'NI5HZ52f9LM',
             title: 'POV-Ray animation',
-            content: 'bfffff f fff fff f f ff f ',
+            content: ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
             github_link: '',
         }, {
             title: 'This CV',
-            content: 'created using AngularJS and Angular Material',
+            content: ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
         }];
     })
 
@@ -160,12 +169,12 @@
         };
 
         $scope.higher_education = {
-            University:'Vilnius University',
-            Faculty:'Faculty of Mathematics and Informatics',
-            Degree:'Bachelor',
-            Major:'Information Technologies',
-            'Period of studies':' September 1, 2013 - January 31, 2017',
-            Description:'This study program follows best practices of western universities and is practice-oriented',
+            University: 'Vilnius University',
+            Faculty: 'Faculty of Mathematics and Informatics',
+            Degree: 'Bachelor',
+            Major: 'Information Technologies',
+            'Period of studies': ' September 1, 2013 - January 31, 2017',
+            Description: 'This study program follows best practices of western universities and is practice-oriented',
         };
     })
 
@@ -175,19 +184,31 @@
         $scope.reasons = [{
             title: 'about to finish',
             label: 'one',
-            content: 'blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+            content: ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas '
+            ],
         }, {
             title: 'ex. summer student',
             label: 'two',
-            content: 'blabla bla blabla bla blablsss la blabla bla blabla bla',
+            content:  ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
         }, {
             title: 'have time to prepare',
             label: 'three',
-            content: 'bfffff f fff fff f f ff f ',
+            content:  ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
         }, {
             title: ' learn fast',
             label: 'four',
-            content: 'CV as an example ',
+            content:  ['blabla sssa sfd sdfk sdf sdfkj sflkjds ',
+                ' asdsa ',
+                ' asdas ',
+            ],
         }];
     });
     </script>

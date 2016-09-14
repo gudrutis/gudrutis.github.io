@@ -173,8 +173,8 @@ table > caption{
   display:block;
 }
 
-md-card-content > p {
-  font-size: 130%;
+md-card-content,md-content > p {
+  font-size: 1.2em;
 }
 
 md-card{
@@ -183,5 +183,5 @@ md-card{
 }
 
 .youtube_cont{
-  margin: 25px;
+  margin: 16px;
 }
