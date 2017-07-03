@@ -31,13 +31,13 @@
         avatar: 'portfolio',
         content: "Blabla bla",
         view: '/portfolio'
-      },
-      {
-        name: 'Reasons to consider',
-        avatar: 'menu',
-        content: 'blablabla',
-        view: '/why'
       }
+      // {
+      //   name: 'Reasons to consider',
+      //   avatar: 'menu',
+      //   content: 'blablabla',
+      //   view: '/why'
+      // }
     ];
 
     // Promise-based API
